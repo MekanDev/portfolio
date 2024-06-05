@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 320px;
+    height: 500px;
+    background-color: rgb(52, 48, 48);
+    border-radius: 30px;
+}
+
+#modeBtn {
+    display: block;
+    width: 40px;
+    margin: 15px auto;
+    cursor: pointer;
+}
+
+#myIMG {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+.user-info {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.user-info p {
+    margin: 5px auto;
+}
+
+.logo {
+    text-align: center;
+    border-top: 1px solid white;
+    margin: 20px auto;
+}
+
+.logo-icon {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.logo-icon img {
+    width: 50px;
+}
+
+.portfolio-btn {
+    text-align: center;
+}
+
+.btn-link {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    padding: 12px 46px;
+    border-radius: 15px;
+    border: 2px solid;
+    animation: borderChangeColor 2s linear infinite;
+}
+
+@keyframes borderChangeColor {
+    25% {
+        border-top: 2px solid cyan;
+        border-right: 2px solid lightgreen;
+        border-bottom: 2px solid blue;
+        border-left: solid tomato;
+        color: white;
+    }
+    50% {
+        border-top: 2px solid blue;
+        border-right: 2px solid cyan;
+        border-bottom: 2px solid tomato;
+        border-left: solid lightgreen;
+        color: black;
+    }
+    75% {
+        border-top: 2px solid lightgreen;
+        border-right: 2px solid blue;
+        border-bottom: 2px solid cyan;
+        border-left: solid tomato;
+        color: white;
+    }
+    100% {
+        border-top: 2px solid tomato;
+        border-right: 2px solid lightgreen;
+        border-left: solid blue;
+        border-bottom: 2px solid cyan;
+        color: black;
+    }
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.qrcode {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+
+.qrcode img {
+    width: 250px;
+    height: 250px;
+}
